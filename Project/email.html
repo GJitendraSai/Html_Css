@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email UI</title>
+    <link rel="stylesheet" href="mail.css"><!--External CSS link-->
+</head>
+<body>
+    <!--NAVIGATION PANE Elements -->
+    <input type="checkbox" id="check">
+    <nav class="navbar">
+        <div class="btn1">
+            <label for="check"><img src="menuw.png" alt=""></label>
+        </div>
+        <div class="logo"><img src="dmaillogo.png" alt=""></div>
+        <div class="search-box">
+            <input type="text" placeholder="Search mails...">
+        </div>
+        <div class="account">Your Account
+            <div class="account-dropdown">
+                <p>G Jitendra Sai</p>
+                <button><a href="mail_signIn.html" style="text-decoration:none;font-size:20px;">Sign Out</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mainbody">
+        
+       
+        <input type="checkbox" id="compose-check" hidden>
+        <!--SIDEBAR Window Structure -->
+        <div class="sidebar">
+            <label for="check" class="closebtn"><img src="close.png" alt=""></label>
+            <div class="compose">
+            <label for="compose-check">Compose</label>
+            </div>
+            <ul>
+                <li><a href="#inbox"><img src="mail-inbox-app.png" alt="Inbox">Inbox</a></li>
+                <li><a href="#drafts"><img src="draft.png" alt="Drafts">Drafts</a></li>
+                <li><a href="#sent"><img src="sent.png" alt="Sent">Sent</a></li>
+                <li><a href="#spam"><img src="spam.png" alt="Spam">Spam </a></li>
+            </ul>
+        </div>
+
+
+        <!--Compose box window elements -->
+        <input type="checkbox" id="compose-check">
+        <input type="radio" name="wid" id="widget1">
+        <input type="radio" name="wid" id="widget2">
+        <input type="radio" name="wid" id="widget3">
+        <!--- Compose Box Widgets-->
+        <div class="compose-window">    
+            <div class="comheader">
+                <span>Message</span>
+                <div class="widgets">
+                    <label for="widget1"><img src="minimize-sign.png" alt="minimize"></label>
+                    <label for="widget2"><img src="expand.png" alt="expand"></label>
+                    <label for="compose-check"><img src="close.png" alt="close"></label>
+                </div>
+            </div>
+            <!--Compose box Form elements -->
+            <form>
+            <div class="form-section">
+                <input type="email" placeholder="To:" required>
+                <input type="text" placeholder="Subject:">
+                <textarea placeholder="Type your message here..."></textarea>
+            </div>
+            <input type="submit" id="sent-notification" hidden>
+                <div class="sent-notification">
+                    <p>Email Sent Successfully!</p>
+                </div>
+            <div class="footer">
+                <!-- <button class="send-btn">Send</button> -->
+                <label for="sent-notification" class="send-btn" id="send-button">Send</label>
+            </div>
+        </form>
+        </div><!--END compose-window div -->
+
+        <!--Center Mail Box-->
+        <div class="centerbox">
+            <div id="inbox" class="section">
+                <h2>Inbox</h2>
+                <div class="mailitem">
+                    <strong>Google Support</strong>
+                    <span>Subject: Security Alert</span>
+                </div>
+                <div class="mailitem"> <h3>Meeting Tomorrow</h3>
+                    <p>Don't forget our meeting at 10 AM.</p></div>
+            </div>
+            <div id="drafts" class="section">
+                <h2>Drafts</h2>
+                <div class="mailitem">Draft 1</div>
+            </div>
+            <div id="sent" class="section">
+                <h2>Sent</h2>
+                <div class="mailitem">Sent Email 1</div>
+            </div>
+            <div id="spam" class="section">
+                <h2>Spam</h2>
+                <div class="mailitem">Spam Email 1</div>
+            </div>
+        </div><!--END class="centerbox"-->
+    </div><!--END class="mainbody"-->
+</body>
+</html>

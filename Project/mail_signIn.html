@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            margin-top:200px;
+
+           
+        
+        }
+        .sbox .boxhead{
+            display:flex;
+            justify-content:space-evenly;
+            margin:0;
+            background-color:blueviolet;
+            color:aliceblue;
+            padding:15px;
+        }
+        .sbox .boxhead  img{
+            left:10px;
+            height:50px;
+            width: 70px;
+           
+           
+        }
+        input {
+            width:70%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /* font-size: 1em; */
+        }
+        input[type="submit"]{
+            width:100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .sbox{
+            display:flex;
+            flex-direction:column;
+            border:2px solid rgb(85, 79, 79);
+            border-radius:25px;
+            height:350px;
+            width:350px;
+            /* box-shadow: 20px; */
+            overflow: hidden;
+            
+        }
+        .submitbtn {
+            background-color: blueviolet;
+            color: white;
+            font-size: 1.1em;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submitbtn:hover {
+            background-color: darkviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="sbox">
+        <h2 class="boxhead"><img src="dmaillogo.png" alt="">Sign In</h2>
+        <form action="email.html">
+            <label for="email">
+                <p><b>Email Id:</b></p>
+                <input type="email" required placeholder="Enter Email ID">
+            </label>
+            <label for="pword">
+                <p><b>Password:</b></p>
+                <input type="password" required >
+            </label>
+            <label for="Submit">
+                <input type="submit" value="Sign In" class="submitbtn" id="subm">
+                
+            </label>
+        </form>
+    </div>
+</body>
+</html>
