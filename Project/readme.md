@@ -1,2 +1,6 @@
 # Simple Mail App Using Html and Css
-![Alt text](Images/dmailapp.png)
+## Mail Sign-IN page
+![Mail Sign in](Images/signinbox.png)
+
+## Mail Webpage
+![DMail app](Images/dmailapp.png)
